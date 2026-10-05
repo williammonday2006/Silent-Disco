@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#danceFloor {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #333;
+    border: 5px solid white;
+}
+
+.panel {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+#panel1 {
+    top: 20px;
+    left: 20px;
+}
+
+#panel2 {
+    bottom: 20px;
+    right: 20px;
+}
+
+#dancer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
