@@ -1,3 +1,5 @@
+const danceFloor = document.getElementById("danceFloor");
+const dancer = document.getElementById("dancer");
 const panel1 = document.getElementById("panel1");
 const panel2 = document.getElementById("panel2");
 
@@ -12,3 +14,12 @@ setInterval(() => {
     panel1.style.backgroundColor = randomColor();
     panel2.style.backgroundColor = randomColor();
 }, 1500);
+
+danceFloor.addEventListener("click", () => {
+    danceFloor.style.backgroundColor = randomColor();
+});
+
+dancer.addEventListener("click", (event) => {
+    event.stopPropagation();
+    dancer.textContent = "💃";
+});
