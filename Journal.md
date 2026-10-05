@@ -4,3 +4,6 @@ I used setInterval to change the panel colors every 1.5 seconds. The colors are 
 
 # Phase 2
 Event bubbling causes clicks to travel from a child to its parent. I used stopPropagation() so clicking the dancer does not also change the dance floor.
+
+# Phase 3
+I used a window keydown listener so the controls work anywhere on the page. The arrow keys change the dancer, and R resets the floor and stops the timer. Held keys can trigger repeated events.
